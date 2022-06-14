@@ -34,13 +34,13 @@ class Rumb  extends LivingCreature {
     //     }
 
     //     return found;
-    // }
+    }
 
     mul() {
         this.multiply++;
         var emptyCells = this.chooseCell(0);
         var newCell = random(emptyCells);
-
+    
         if (newCell && this.multiply >= 10) {
             var newX = newCell[0];
             var newY = newCell[1];
@@ -51,6 +51,8 @@ class Rumb  extends LivingCreature {
             this.multiply = 1;
             this.energy = 10;
         }
+    }
+   
     // }if(directions) {
     //     this.directions = [
     //         [this.x - 1, this.y - 1],
@@ -62,7 +64,7 @@ class Rumb  extends LivingCreature {
     //         [this.x, this.y + 1],
     //         [this.x + 1, this.y + 1]
     //     ];
-     }
+    
 
     move() {
         this.energy--;
