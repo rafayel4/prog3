@@ -1,6 +1,12 @@
 
 // function myFunction() {
 
+
+
+
+
+
+
 let matrix = []
 function genereateMatrix(matLen) {
     for (let i = 0; i < matLen; i++) {
@@ -64,11 +70,67 @@ function generate(matLen, gr, grEat, kr, rb) {
     matrix[0][0] = 4
     return matrix
 }
-
+ 
 function myFunction() {
+    const myInterval = setInterval(myTimer, 1000);
+
+    function myTimer() {
+      const date = new Date();
+      document.getElementById("demo").innerHTML = date.toLocaleTimeString();
+    }
+    
+    function myStopFunction() {
+      clearInterval(myInterval);
+      
+      
+    }
+
+
+
+
+
+
+// Wrap every letter in a span
+var textWrapper = document.querySelector('.ml2');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml2 .letter',
+    scale: [4,1],
+    opacity: [0,1],
+    translateZ: 0,
+    easing: "easeOutExpo",
+    duration: 950,
+    delay: (el, i) => 70*i
+  }).add({
+    targets: '.ml2',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+
+
+
+
+    // var a = Math.floor(random(0,40));
+    // console.log(a);
+    // if ( a<30){
+    //     class = "dexin";
+    // }else if (a>30){
+    //     class = "rozvi";
+    // }
+ document.body.style.backgroundColor = "red";
+
+ 
+
+
+
+
     matrix = generate(25,45, 7, 7, 2,2)
 
-    //matrix = generate(25, 45, 9, 7, 1, 8)
+    matrix = generate(25, 45, 9, 7, 1, 8)
     for (var y = 0; y < matrix.length; y++) {
         for (var x = 0; x < matrix[y].length; x++) {
 
@@ -91,6 +153,7 @@ function myFunction() {
         }
     }
 }
+
 
 
 

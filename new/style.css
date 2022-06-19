@@ -1,0 +1,45 @@
+/* .dexin{
+    background-color: yellow;
+}
+.kanach{
+    background-color: blue;
+}
+.karmir{
+    background-color: red;
+} */
+svg text{
+    font-family:Sans-serif;
+    letter-spacing:10px;
+    stroke:green;
+    font-size:150px;
+    font-weight:700;
+    stroke-width:3;
+    animation: textAnimate 3s infinite alternate;
+}
+/* @keyframes texAnimate{
+   stroke-dasharray:0 50%; 
+   stroke-deshoffset:20%;
+   fill:gray;
+} */
+
+
+.ml2 {
+    font-weight: 900;
+    font-size: 3.5em;
+    color:#0301ff;
+}
+  .ml2 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+  /* .titlner{
+margin-top: 0px;
+  } */
+  #legend{
+     
+      height: 380px;
+       padding: 10px;
+       margin-top: 170px;
+       left:500px;
+  }
+ 
