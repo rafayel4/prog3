@@ -1,4 +1,4 @@
-class Ligthing {
+module.exports = class Ligthing {
     constructor(x, y) {
         this.x = x;
         this.y = y;

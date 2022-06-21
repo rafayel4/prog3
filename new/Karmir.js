@@ -1,9 +1,9 @@
+let LivingCreature = require('./LivingCreature')
 
 
 
 
-
-class Karmir  extends LivingCreature {
+ module.exports= class Karmir  extends LivingCreature {
     constructor(x, y) {
         super(x,y)
     //     this.x = x;

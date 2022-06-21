@@ -1,4 +1,6 @@
-class Rumb  extends LivingCreature {
+let LivingCreature = require('./LivingCreature')
+
+module.exports = class Rumb  extends LivingCreature {
     // constructor(x, y) {
         constructor(x, y) {
             super(x,y);
